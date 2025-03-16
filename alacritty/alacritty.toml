@@ -1,0 +1,25 @@
+
+[window]
+decorations="full"
+dynamic_title=true
+opacity = 0.5
+[window.padding]
+y=1
+x=1
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+[font] 
+size = 8
+
+[font.normal] 
+family='Hack'
+[font.bold]
+family="Terminus"
+style="bold"
+
+[terminal]
+
+[terminal.shell]
+program = "/bin/sh"
+args = ["-c","export ZDOTDIR=$HOME/.config/zsh && zsh"]

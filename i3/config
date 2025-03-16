@@ -4,8 +4,10 @@
 # this file and re-run i3-config-wizard(1).
 hide_edge_borders smart
 set $mod Mod4
+exec --no-startup-id sh -c 'export ZDOTDIR="$HOME/.config/zsh"; systemctl --user import-environment ZDOTDIR'
+
 for_window [window_role="alert"] floating enable
-exec_always --no-startup-id alacritty --config-file "/home/_3hy/Documents/al_config.toml" -e sudo /home/_3hy/Documents/spoof.sh
+exec_always --no-startup-id alacritty --config-file "/home/$USER/.config/alacritty/alacritty.toml" -e sudo ~/.config/scripts/spoof.sh
 exec --no-startup-id unclutter --start-hidden --timeout 0.1
 exec_always --no-startup-id snixembed
 exec --no-startup-id conky
@@ -52,10 +54,10 @@ bindsym $mod+Control+x exec shutdown now
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
-exec_always --no-startup-id /etc/polybar/launch.sh 
+exec_always --no-startup-id /home/$USER/.config/polybar/launch.sh 
 bindsym $mod+x exec betterlockscreen --lock blur
 # start a terminal
-bindsym $mod+Return exec alacritty  --config-file "/home/_3hy/Documents/al_config.toml"
+bindsym $mod+Return exec alacritty  --config-file "/home/$USER/.config/alacritty/alacritty.toml"
 # kill focused window
 bindsym $mod+q kill
 bindsym $mod+Shift+q exec --no-startup-id /home/_3hy/.config/i3/fq.sh
