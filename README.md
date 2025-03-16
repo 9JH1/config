@@ -7,5 +7,5 @@ git clone https://github.com/9jh1/config
 rm -rf config/img
 mv config/* .config
 mv .zshrc .zshrc_old
-echo "export ZDOTDIR=$HOME/.config/zsh" > .zshrc
+echo "export ZDOTDIR=$HOME/.config/zsh" > .zshrc && zsh
 ```
