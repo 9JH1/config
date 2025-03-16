@@ -1,6 +1,0 @@
-2025-02-24 14:04:19.800 [info] update#setState idle
-2025-02-24 14:04:31.690 [info] Extension host with pid 16860 exited with code: 0, signal: unknown.
-2025-02-24 14:04:49.505 [info] update#setState checking for updates
-2025-02-24 14:04:49.513 [info] update#setState available for download
-2025-02-25 09:37:15.791 [warning] No ptyHost heartbeat after 6 seconds
-2025-02-25 09:37:21.281 [info] Extension host with pid 16894 exited with code: 0, signal: unknown.

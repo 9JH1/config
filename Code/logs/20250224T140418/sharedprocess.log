@@ -1,6 +1,0 @@
-2025-02-24 14:05:23.796 [info] Getting Manifest... ms-vscode.live-server
-2025-02-24 14:05:23.947 [info] Installing extension: ms-vscode.live-server {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/_3hy/.vscode/extensions/extensions.json","path":"/home/_3hy/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.1","date":"2025-02-10T13:13:58.153Z"}}
-2025-02-24 14:05:25.427 [info] Extension signature verification result for ms-vscode.live-server: UnknownError. Executed: true. Duration: 96ms.
-2025-02-24 14:05:25.750 [info] Extracted extension to file:///home/_3hy/.vscode/extensions/ms-vscode.live-server-0.4.15: ms-vscode.live-server
-2025-02-24 14:05:25.783 [info] Renamed to /home/_3hy/.vscode/extensions/ms-vscode.live-server-0.4.15
-2025-02-24 14:05:25.889 [info] Extension installed successfully: ms-vscode.live-server vscode-userdata:/home/_3hy/.vscode/extensions/extensions.json
