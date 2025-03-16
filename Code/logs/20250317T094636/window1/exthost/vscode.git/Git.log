@@ -167,3 +167,32 @@
 2025-03-17 09:50:45.612 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [31ms]
 2025-03-17 09:50:46.802 [info] > git check-ignore -v -z --stdin [12ms]
 2025-03-17 09:50:49.719 [info] > git check-ignore -v -z --stdin [6ms]
+2025-03-17 09:51:09.575 [info] > git add -A -- . [14857ms]
+2025-03-17 09:51:09.575 [info] warning: adding embedded git repository: i3/hidden-config-files
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: 	git submodule add <url> i3/hidden-config-files
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: 	git rm --cached i3/hidden-config-files
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+2025-03-17 09:51:10.094 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [470ms]
+2025-03-17 09:51:10.229 [info] > git config --get commit.template [24ms]
+2025-03-17 09:51:10.351 [info] > git config --get commit.template [17ms]
+2025-03-17 09:51:10.491 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [25ms]
+2025-03-17 09:51:10.730 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [33ms]
+2025-03-17 09:51:10.998 [info] > git status -z -uall [423ms]
+2025-03-17 09:51:11.531 [info] > git merge-base refs/heads/main refs/remotes/origin/main [274ms]
+2025-03-17 09:51:11.753 [info] > git diff --name-status -z --diff-filter=ADMR e861e8035535cc21dbf4cbca20cc8b30f5406c10...refs/remotes/origin/main [33ms]
+2025-03-17 09:51:12.285 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [778ms]
+2025-03-17 09:51:12.452 [info] > git config --get commit.template [19ms]
+2025-03-17 09:51:12.574 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [25ms]
+2025-03-17 09:51:12.773 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [19ms]
+2025-03-17 09:51:12.991 [info] > git status -z -uall [323ms]

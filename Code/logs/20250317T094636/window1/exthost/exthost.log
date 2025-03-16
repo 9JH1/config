@@ -13,3 +13,4 @@
 2025-03-17 09:46:48.954 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
 2025-03-17 09:46:49.231 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
 2025-03-17 09:50:45.642 [warning] [Decorations] CAPPING events from decorations provider vscode.git 667
+2025-03-17 09:51:11.091 [warning] [Decorations] CAPPING events from decorations provider vscode.git 667
