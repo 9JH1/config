@@ -1,0 +1,2 @@
+2025-03-17 09:46:59.879 [error] [File Watcher] Unexpected error: inotify_add_watch on '/home/_3hy/.config/Code/logs/20250213T095848/window1/exthost/vscode.github-authentication' failed: No such file or directory (EUNKNOWN) (path: /home/_3hy/.config)
+2025-03-17 09:46:59.879 [error] [File Watcher (universal)] inotify_add_watch on '/home/_3hy/.config/Code/logs/20250213T095848/window1/exthost/vscode.github-authentication' failed: No such file or directory

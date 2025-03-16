@@ -1,0 +1,8 @@
+2025-02-25 12:33:43.523 [info] update#setState idle
+2025-02-25 12:34:13.531 [info] update#setState checking for updates
+2025-02-25 12:34:13.542 [info] update#setState available for download
+2025-02-25 14:06:34.467 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-25 15:02:36.348 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-25 15:06:03.311 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-25 15:23:05.753 [error] Blocked vscode-file request vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/editor/common/services/editorSimpleWorkerMain.js#TextEditorWorker
+2025-02-25 15:23:05.816 [info] Extension host with pid 56065 exited with code: 0, signal: unknown.

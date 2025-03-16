@@ -1,0 +1,4 @@
+2025-03-17 09:36:21.429 [error] [File Watcher] Unexpected error: inotify_add_watch on '/home/_3hy/.config/Code/logs/20250205T090709/window1/exthost/vscode.microsoft-authentication' failed: No such file or directory (EUNKNOWN) (path: /home/_3hy/.config)
+2025-03-17 09:36:21.430 [error] [File Watcher (universal)] inotify_add_watch on '/home/_3hy/.config/Code/logs/20250205T090709/window1/exthost/vscode.microsoft-authentication' failed: No such file or directory
+2025-03-17 09:38:00.954 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-03-17 09:39:25.400 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted

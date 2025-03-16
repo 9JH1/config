@@ -1,0 +1,2 @@
+return {
+  "garymjr/nvim-snippets",}
