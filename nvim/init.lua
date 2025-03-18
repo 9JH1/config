@@ -5,6 +5,10 @@ require('lualine').setup{
 		theme="gruvbox_dark"
 	}
 }
+
+require("telescope").setup({
+
+})
 require('gitsigns').setup()
 
 require('nvim-tree').setup{
@@ -87,7 +91,7 @@ vim.api.nvim_set_keymap('n', '<C-d>', ':tabnext<CR>', { noremap = true, silent =
 vim.api.nvim_set_keymap('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-w>', ':tabclose<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-S-c>', ':tabnew | :tabprevious<CR>', { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap('n', '<C-g>',':Telescope colorscheme enable_preview=true<CR>',{noremap=true,silent=true})
 
 vim.cmd([[
   augroup TabHistory
