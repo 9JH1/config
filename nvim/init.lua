@@ -1,41 +1,45 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-vim.opt.termguicolors = true
--- empty setup using defaults
+-- setup plugins
 require("config.lazy")
 require('lualine').setup{
 	options={
 		theme="gruvbox_dark"
 	}
 }
+require('gitsigns').setup()
+
 require('nvim-tree').setup{
 	view = {
-		side="right"
+ 	side="right"
 	},
 }
 vim.notify = require("notify")
 require("notify").setup{
 	background = "#ff0000"
-
 }
+wilder = require("wilder")
+ wilder.set_option('renderer', wilder.popupmenu_renderer({
+  pumblend = 20,
+}))
 vim.api.nvim_create_autocmd("BufEnter", {
-  nested = true,
+nested = true,
   callback = function()
     if #vim.api.nvim_list_wins() == 1 and require("nvim-tree.utils").is_nvim_tree_buf() then
       vim.cmd "quit"
     end
   end
 })
-vim.o.background = "dark" -- or "light" for light mode
+
+-- set defaults
 vim.cmd([[colorscheme gruvbox]])
 vim.cmd("call wilder#setup({'modes': [':', '/', '?']})")
 
-wilder = require("wilder")
-wilder.set_option('renderer', wilder.popupmenu_renderer({
-  pumblend = 20,
-}))
+
+-- set vim config
+vim.o.background = "dark" -- or "light" for light mode
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true
+vim.opt.guicursor= "n-v-c-i:block"
 vim.opt.syntax = "on"
 vim.opt.rnu = true
 vim.opt.mouse = "a"
@@ -73,6 +77,7 @@ function MyFoldText()
     return first_line .. ' ' .. spaces .. last_line
 end
 
+-- set fold 
 vim.opt.foldtext = "v:lua.MyFoldText()"
 
 -- vim.keymap.del('i', '<C-r>')
@@ -82,10 +87,18 @@ vim.api.nvim_set_keymap('n', '<C-d>', ':tabnext<CR>', { noremap = true, silent =
 vim.api.nvim_set_keymap('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-w>', ':tabclose<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-S-c>', ':tabnew | :tabprevious<CR>', { noremap = true, silent = true })
+
+
 vim.cmd([[
   augroup TabHistory
     autocmd!
     autocmd BufDelete * if tabpagenr('$') > 1 | tabnew | endif
   augroup END
 ]])
+
+-- activate the cursor option
+vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
+
 vim.cmd("NvimTreeOpen")
+
